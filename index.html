@@ -1,0 +1,1510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VII SECOMP - Semana da Computação</title>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>
+    <script>
+      $(document).ready(function(){
+            $("#div4").hide();
+            $("#div3").hide();
+            $("#div2").hide();
+            $("#div1").show(0);
+             $("#dia1").addClass('active-dia');
+             var alturaAtual = document.getElementById('div1').offsetHeight;
+            var alturaAtual1 = document.getElementById('date1').offsetHeight;
+            document.getElementById("date1").style.marginTop = ((alturaAtual - alturaAtual1) / 2.5)+"px";
+
+            $("#dia1").click(function(){
+                $("#div1").show(0);
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#dia1").addClass('active-dia');
+                $("#dia2").removeClass('active-dia');
+                $("#dia3").removeClass('active-dia');
+                $("#dia4").removeClass('active-dia');
+                var alturaAtual = document.getElementById('div1').offsetHeight;
+                var alturaAtual1 = document.getElementById('date1').offsetHeight;
+                document.getElementById("date1").style.marginTop = ((alturaAtual - alturaAtual1) / 2.5)+"px";
+            });
+            $("#dia2").click(function(){
+                $("#div2").show(0);
+                $("#div1").hide();
+                $("#div3").hide();
+                $("#div4").hide();
+                $("#dia1").removeClass('active-dia');
+                $("#dia4").removeClass('active-dia'); 
+                $("#dia3").removeClass('active-dia');             
+                $("#dia2").addClass('active-dia');
+                var alturaAtual = document.getElementById('div2').offsetHeight;
+                var alturaAtual1 = document.getElementById('date2').offsetHeight;
+                document.getElementById("date2").style.marginTop = ((alturaAtual - alturaAtual1) / 2.5)+"px";
+            });
+            $("#dia3").click(function(){
+                $("#div3").show(0);
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div4").hide();
+                $("#dia1").removeClass('active-dia');
+                $("#dia2").removeClass('active-dia');
+                $("#dia4").removeClass('active-dia');             
+                $("#dia3").addClass('active-dia');
+                var alturaAtual = document.getElementById('div3').offsetHeight;
+                var alturaAtual1 = document.getElementById('date3').offsetHeight;
+                document.getElementById("date3").style.marginTop = ((alturaAtual - alturaAtual1) / 2.5)+"px";
+            });
+            $("#dia4").click(function(){
+                $("#div4").show(0);
+                $("#div1").hide();
+                $("#div2").hide();
+                $("#div3").hide();
+                $("#dia1").removeClass('active-dia');
+                $("#dia2").removeClass('active-dia'); 
+                $("#dia3").removeClass('active-dia');             
+                $("#dia4").addClass('active-dia');
+                var alturaAtual = document.getElementById('div4').offsetHeight;
+                var alturaAtual1 = document.getElementById('date4').offsetHeight;
+                document.getElementById("date4").style.marginTop = ((alturaAtual - alturaAtual1) / 2.5)+"px";
+            });
+        });
+    </script>
+
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.htm#page-top">SECOMP VII</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#convidados">Convidados</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#cronograma">Programação</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#patrocinios">Patrocínios</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#inscricao">Inscrição</a>
+                    </li>
+                    <li>
+                        <a class="navbar-brand page-scroll" href="index.htm#contato">Contato</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a class="page-scroll" href="jogos.html">Campeonato de Jogos</a>
+                    </li>  -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            </dipv>
+            <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <div class="container">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="sobre" style="height: 100%">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">Sobre o Evento</h2>
+                    <hr class="light">
+                    <p class="text-faded">
+                        A Semana da ComputaÇao da UVA (SECOMP) é um evento realizado por alunos, professores e
+                        colaboradores,
+                        com foco na socialização do conhecimento e debate sobre computação e suas tecnologias, com
+                        diversas palestras,
+                        minicursos e workshops sobre inovações na área.
+                        <br /><br />Neste ano, a Semana da Computação que estará em sua sétima edição acontecerá entre
+                        os dias 10 e 12 de Dezembro e terá como tema "Tecnologia e suas singularidades". <br /> <br />
+                        Além disto, diversas atrações estão programadas para realizar este momento ímpar. Junte-se a
+                        nós e não
+                        perca esta oportunidade única!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-light" id="convidados" style="position: relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Convidados</h2>
+                    <hr class="verde">
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/euclidesbarrozo.jpg" alt="">
+                        <h4>Euclides Barrozo</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/euclides-barrozo-1a4bb849/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/diegopereira.jpg" alt="">
+                        <h4>Diego Pereira</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/francisco-diego-9a7539b5/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/ederjacques.jpg" alt="">
+                        <h4>Eder Jacques</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/%C3%A9der-jacques-porf%C3%ADrio-farias-1879a121/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/murilo.png" alt="">
+                        <h4>Murilo Martins</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/murilo-martins-2a465511b/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/mateusaraujo.jpg" alt="">
+                        <h4>Mateus Araujo</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/mateus-araujo-1bb597bb/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/lisboacoutinho.gif" alt="">
+                        <h4>Lisboa Coutinho</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/lisboa-coutinho-736252a0/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/edsoncelio.jpg" alt="">
+                        <h4>Edson Celio</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/edsoncelio/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/lorivalsilva.jpg" alt="">
+                        <h4>Lorival Silva</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/lourival-silva-52563328/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img class="img-circle" src="img/palestrantes/maxwellalves.jpg" alt="">
+                        <h4>Maxwell Alves</h4>
+                        <p class="text-muted"></p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/in/maxwell-alves-teixeira-604069156/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Cronograma -->
+
+    <section class="bg-cronograma" id="cronograma">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-heading">Programação</h2>
+                <hr class="light">
+            </div>
+        </div>
+
+        <!-- div 1 -->
+        <div class="row div-cronograma text-center" id="div1">
+            <div class="col-md-2 col-md-offset-1 date" id="date1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofmonth">10</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofweek">Segunda-Feira</div>
+                        <div class="shortdate">Dezembro, 2018</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    18:30 às 19:00
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Entrada do Auditório do CCS
+                                </span>
+                            </div>
+
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Credenciamento
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ificina.png">-->
+                    </div>
+
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    19:00 às 19:30
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Abertura da Semana Da Computação
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ifgnu.jpg">-->
+                    </div>
+
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Coffee Break
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ifgnu.jpg">-->
+                    </div>
+
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    19:30 às 21:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Gamificação em Tecnologias Educacionais.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/euclidesbarrozo.jpg">
+                    </div>
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    21:00 às 21:30
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Encerramento
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/marcos.jpg">-->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div 2 -->
+        <div class="row div-cronograma text-center" id="div2">
+            <div class="col-md-2 col-md-offset-1 date" id="date2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofmonth">11</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofweek">Terça-Feira</div>
+                        <div class="shortdate">Dezembro, 2018</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Laboratório 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Oficina de Node JS
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/diegopereira.jpg">
+                    </div>
+                </div>
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Laboratório 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Oficina de React Web
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/mateusaraujo.jpg">
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Laboratório 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Conhecendo MOSQUITTO e suas funcionalidades
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/maxwellalves.jpg">
+                    </div>
+                </div>
+
+                <!--
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                     Lab 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/virginiafernandesmota.jpg">
+                    </div>
+               
+                </div>
+            -->
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    18:30 às 19:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Credencimento
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ificina.png">-->
+                    </div>
+                </div>
+
+
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    19:00 às 20:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Mercado de trabalho e Tecnologia
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/murilo.png">
+                    </div>
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Coffee Break
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ifgnu.jpg">-->
+                    </div>
+
+                </div>
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    20:00 às 21:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Jogos Pervasivos
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/ederjacques.jpg">
+                    </div>
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    21:00 às 21:30
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Encerramento
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/lamif.png">-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- div 3 -->
+        <div class="row div-cronograma text-center" id="div3">
+            <div class="col-md-2 col-md-offset-1 date" id="date3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofmonth">12</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofweek">Quarta-Feira</div>
+                        <div class="shortdate">Dezembro, 2018</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-8">
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Laboratório 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    TCC Model Canvas
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/lorivalsilva.jpg">
+                    </div>
+                </div>
+
+
+                <!--
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Lab 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 
+                </div>
+            -->
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Laboratório 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Oficina de SCRUM
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/lisboacoutinho.gif">
+                    </div>
+                </div>
+                <!--
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                     Lab 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/virginiafernandesmota.jpg">
+                    </div>
+               
+                </div>
+            -->
+                <!--
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    18:30 às 19:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                     Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/edsoncelio.jpg">
+                    </div> 
+                </div>
+            -->
+
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    20:00 às 21:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    E se ao invés de Dev e Ops for DevOps? <br />
+                                    Uma introdução a cultura DevOps
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/edsoncelio.jpg">
+                    </div>
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Coffee Break
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/ifgnu.jpg">-->
+                    </div>
+
+                </div>
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    19:00 às 20:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Indústria 4.0
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/lisboacoutinho.gif">
+                    </div>
+                </div>
+
+
+
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    21:00 às 21:30
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Encerramento
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <!--<img class="img-cronograma" src="img/palestrantes/lamif.png">-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- div 4 -->
+        <!--
+        <div class="row div-cronograma text-center" id="div4">
+            <div class="col-md-2 col-md-offset-1 date" id="date4">
+                <div class="row">
+                    <div class="col-md-12">
+                       <div class="dayofmonth">13</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dayofweek">Quinta-Feira</div>
+                        <div class="shortdate">Dezembro, 2018</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Lab 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/ificina.png">
+                    </div>   
+                </div>
+
+                
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    08:00 às 12:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Lab 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 
+                </div>
+                  
+          
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                     Lab 1
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/lamif.png"> 
+                    </div>
+                </div>
+
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    14:00 às 18:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                     Lab 2
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/virginiafernandesmota.jpg">
+                    </div>
+               
+                </div>
+
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    18:30 às 19:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                     Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/ificina.png">
+                    </div> 
+                </div>
+
+
+
+
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    19:00 às 20:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/emcomp.png">
+                    </div>   
+                </div>
+
+                <div class="row row-linha">
+                     <div class="col-md-10 text-left">
+                        <div class="row row-top-10">
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    20:00 às 21:00
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="atividade">
+                                    Auditório do CCS
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="atividade">
+                                    Não confirmado
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                 <div class="col-md-2">
+                        <img class="img-cronograma" src="img/palestrantes/lamif.png">
+                    </div>  
+                </div>
+
+                <div class="row row-linha">
+                    <div class="col-md-10 text-left">
+                       <div class="row row-top-10">
+                           <div class="col-md-3">
+                               <span class="atividade">
+                                   21:00 às 21:30
+                               </span>
+                           </div>
+                           <div class="col-md-3">
+                               <span class="atividade">
+                                   Auditório do CCS
+                               </span>
+                           </div>
+                           <div class="col-md-6">
+                               <span class="atividade">
+                                   Não confirmado
+                               </span>
+                           </div>
+                           
+                       </div>
+                   </div>
+                <div class="col-md-2">
+                       <img class="img-cronograma" src="img/palestrantes/lamif.png">
+                   </div>  
+               </div>
+                
+            </div>
+          -->
+        </div>
+
+
+
+
+        <div class="row row-top-10">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="row text-center">
+                    <div class="col-md-12 text-center">
+                        <a class="btn-dias" id="dia1">10</a>
+                        <a class="btn-dias" id="dia2">11</a>
+                        <a class="btn-dias" id="dia3">12</a>
+                        <!--<a class="btn-dias" id="dia4">13</a>-->
+                        <!-- <a class="btn-dias" id="dia4">18</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fecha Cronograma -->
+    <!-- Abre Patrocinadores-->
+    <section class="no-padding" id="patrocinios">
+        <div class="container-fluid">
+            <div class="row apoio2">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Patrocinadores</h2>
+                    <hr class="verde">
+                </div>
+            </div>
+            <div class="row no-gutter popup-gallery">
+
+                <div class="col-md-3">
+                    <p class="patrocinios"><img src="img/patrocinio/cie.png" width="200px" height="200px"></p>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="patrocinios"><img src="img/patrocinio/pcnet.jpg" width="200px" height="200px"></p>
+                </div>
+                <!--
+                <div class="col-md-3">
+                        <p class="patrocinios"><img src="img/patrocinio/rei.jpg" width="200px" height="200px"></p>
+                </div>
+                
+                <div class="col-md-3">
+                        <p class="patrocinios"><img src="img/patrocinio/UniversoDiscreto.jpg" width="200px"  height="200px"></p>
+                </div>
+                <div class="col-md-3">
+                        <p class="patrocinios"><img src="img/patrocinio/emm.jpg" width="200px"  height="150px" ></p>
+                </div>
+                <div class="col-md-3">
+                       <p class="patrocinios"><img src="img/patrocinio/FFSystemB.png" width="200px" height="200px"></p>
+                </div>
+                
+                <div class="col-md-3">
+                       <p class="patrocinios"><img src="img/patrocinio/logo-sol-e-neve.png" width="200px" height="200px"></p>
+                </div>
+                <div class="col-md-3">
+                       <p class="patrocinios"><img src="img/patrocinio/RDF.jpg" width="300px" height="200px"></p>
+                </div>
+                <div class="col-md-3">
+                       <p class="patrocinios"><img src="img/patrocinio/emcomp.png" width="250px" height="150px"></p>
+                </div>
+                <div class="col-md-3">
+                    <p class="patrocinios"><img src="img/patrocinio/AcademiaForense.png" width="250px" height="150px"></p>
+                </div>
+            -->
+
+
+
+
+            </div>
+
+            <div class="row apoio2">
+                <div class="col-md-3">
+                    <div class="col-md-4">
+                        <hr class="apoio">
+                        </hr>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="patrocinios3">Organização</p>
+                    </div>
+                    <div class="col-md-4">
+                        <hr class="apoio">
+                        </hr>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <hr class="apoio">
+                    </hr>
+                </div>
+                <div class="col-md-1">
+                    <p class="patrocinios3">Apoio</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="apoio">
+                    </hr>
+                </div>
+            </div>
+            <div class="row no-gutter popup-gallery">
+                <div class="row">
+
+                    <div class=" col-md-3">
+                        <p class="patrocinios"><img src="img/logo CA.jpg" width="250px"></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <p class="patrocinios"><img src="img/patrocinio/nortmotos.png" width="250px"></p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="patrocinios"><img src="img/patrocinio/uva(apoio).jpeg" width="150px"></p>
+                    </div>
+
+                    <!--
+                    <div class="col-md-3">
+                            <p class="patrocinios"><img src="img/lamif.png" width="250px"></p>
+                    </div>
+                    -->
+
+                </div>
+                <div class="row">
+                    <!--
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-3">
+                            <p class="patrocinios"><img src="img/patrocinio/uva(apoio).jpeg" width="250px"></p>
+                    </div>
+                    
+                    <div class="col-md-3">
+                            <p class="patrocinios"><img src="img/patrocinio/nortmotos.png" width="200px"></p>
+                    </div>
+                     <div class="col-md-3">
+                    </div>                
+                -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+
+    <section id="inscricao" class="bg-primary" style="height: 100%; background-color:rgb(34, 59, 139);color:#f2f5ff;">
+        <div class="container" style="background-color:rgb(34, 59, 139);color:#f2f5ff;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="background-color:rgb(34, 59, 139);color:#f2f5ff;">
+                    <h2 class="section-heading">Inscrição</h2>
+                    <hr class="light">
+
+                    Faça sua inscrição na Secomp VII.<br>
+                    <a class="link-inscricao" target="_blank" href="https://www.eventbrite.com.br/e/secomp-vii-registration-51991253238"></style>
+                        Realize sua inscrição aqui!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-primary2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contato</h2>
+                    <hr class="light">
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <img src="img/phone.png" width="50" height="50">
+                    <p>(88) 3677-4222<br> Centro Acadêmico da Ciência da Computação</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="img/email.png" width="50" height="50">
+                    <p>
+                        <font color="white">cacomp.ueva@gmail.com</font><br>Organização Secomp 2018
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rodape">
+        <div class="container">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8 center">
+                <div class="direitos">
+                    <a class="btn btn-block btn-social btn-facebook" href="javascript:if(confirm('https://www.facebook.com/SecompUVA\n\nThis file was not retrieved because it was filtered out by your project settings.\n\nWould you like to open it from the server?'))window.location='https://www.facebook.com/SecompUVA'"
+                        target="_blank">
+                        <img src="img/face.jpg" width="35px" height="35px">
+                        <font color="black"> Siga no Facebook</font>
+                    </a>
+                    <br />
+                    <a class="btn btn-block btn-social btn-facebook" href="javascript:if(confirm('https://www.instagram.com/cacomp.ueva/?hl=pt-br\n\nThis file was not retrieved because it was filtered out by your project settings.\n\nWould you like to open it from the server?'))window.location='https://www.instagram.com/cacomp.ueva/?hl=pt-br'"
+                        target="_blank">
+                        <img src="img/insta.png" width="35px" height="35px">
+                        <font color="black"> Siga no Instagram</font>
+                    </a>
+
+                    <!--
+
+                    © Copyright 2018 - Semana da Computação SECOMP VII- Todos os direitos reservados<br>
+                    Desenvolvido por - <a href="javascript:if(confirm('http://www.emcomp.com.br\n\nThis file was not retrieved because it was filtered out by your project settings.\n\nWould you like to open it from the server?'))window.location='http://www.emcomp.com.br'" class="emcomp" target="_blank">EMCOMP</a>
+                    -->
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

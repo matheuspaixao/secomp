@@ -1,0 +1,135 @@
+.btn-custom{
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+}
+.btn-dias{
+  display: inline-block;
+  background-color: rgb(34, 59, 139);
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-size: 20px;
+  margin-left: 120px;
+  cursor: pointer;
+}
+.btn-dias:hover{
+  background-color: #4bc6e5;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  font-size: 20px;
+}
+.div-cronograma{
+  margin: 0% 5% 2.5% 0%;
+  min-height: 100px;
+  height: auto;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.img-cronograma{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding: 5px;
+}
+#cronograma{
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.row-linha{
+  min-height: 60px;
+  height: auto;
+  background-color: #FFF;
+  margin-top: 5px;
+  padding: 0px 0px 5px 0px;
+}
+span.atividade{
+  color: #444;
+  font-weight: bold;
+}
+.row-top-10{
+  margin-top: 20px;
+}
+p.dia{
+  font-size: 40px;
+}
+.date{
+  font-weight: bold;
+  text-align: center;
+}
+.shortdate{
+  color: rgba(255, 255,255, 0.6);
+}
+.active-dia{
+  background-color: #4bc6e5;
+  color: #000;
+}
+.bg-cronograma{
+  padding: 40px;
+  background-color: #222222;
+}
+.bg-cronograma .section-heading{
+  color: #FFF;
+}
+.logo-emcomp{
+  width: 200px;
+  height: 80px;
+}
+a.emcomp{
+  font-weight: bold;
+  color: #004A86;
+}
+.label-cronograma{
+  color: #444;
+  font-weight: bold;
+  font-size: 14px;
+}
+p.cronograma{
+  margin: 0;
+}
+a.details{
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 30px;
+}
+a.details:hover{
+  color: rgb(34, 59, 139);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a.link-inscricao{
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 30px;
+}
+a.link-inscricao:hover{
+  color: #444;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}

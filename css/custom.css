@@ -133,3 +133,39 @@ a.link-inscricao:hover{
   font-weight: 600;
   cursor: pointer;
 }
+
+.button-link {
+  background-color: rgb(255, 255, 255); 
+  border: none;
+  color: rgb(54, 54, 54);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-link:hover {
+  background-color: #c7c6c6;
+  color: rgb(54, 54, 54);
+}
+
+.img-link {
+  opacity: 1;
+  display: inline-block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-link:hover {
+  opacity: 0.7;
+  transition: .5s ease;
+}

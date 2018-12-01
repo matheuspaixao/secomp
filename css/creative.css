@@ -231,7 +231,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/background.jpg');
+  background: url('../img/background.jpg') no-repeat center center/cover;
   text-align: center;
   color: white;
 }
@@ -239,6 +239,7 @@ header .header-content {
   position: relative;
   text-align: center;
   padding: 100px 0px 100px;
+  margin-top: 70px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {

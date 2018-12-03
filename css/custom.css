@@ -176,8 +176,27 @@ a.link-inscricao:hover{
   height: 100%;
 }
 
+.map-google {
+  border: 0;
+  width: 500px;
+  height: 350px
+}
+
+.img-patrocinio {
+
+}
+
 @media (max-width: 600px) {
   .section-about {
     height: 120%;
+  }
+
+  .map-google {
+    border: 0;
+    width: 100%;
+  }
+
+  .img-patrocinio {
+    width: 100%;
   }
 }

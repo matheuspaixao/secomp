@@ -176,6 +176,10 @@ a.link-inscricao:hover{
   height: 100%;
 }
 
+.section-map {
+  height: 100%;
+}
+
 .map-google {
   border: 0;
   width: 500px;
@@ -190,6 +194,10 @@ a.link-inscricao:hover{
   .section-about {
     height: 120%;
   }
+
+  .section-map {
+    height: 170%;
+  } 
 
   .map-google {
     border: 0;
